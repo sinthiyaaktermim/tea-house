@@ -18,6 +18,9 @@
             colors: {
               clifford: '#da373d',
             },
+            fontFamily: {
+              sans: ['Manrope', 'sans-serif'],
+            },
           },
         },
       };
@@ -26,12 +29,12 @@
 
   <body>
     <!-- header-area -->
-    <header class="max-w-[1150px] mx-auto flex pt-10 mb-10">
+    <header class=" max-w-[1150px] mx-auto flex justify-between pt-10 mb-10 lg:flex-row md:flex-col flex-col md:m-4">
       <!-- text content -->
-      <div class="mx-auto">
-        <h1 class="text-7xl font-extrabold text-black mt-5">
-          It's good <br />
-          tea time at The <br />
+      <div class="w-full">
+        <h1 class=" max-w-[628px] text-7xl font-extrabold text-black mt-5">
+          It's good 
+          tea time at The 
           Tea House
         </h1>
         <p class="my-7 text-[#777777] text-lg font-medium">
@@ -59,8 +62,8 @@
         </button>
       </div>
       <!-- image-content -->
-      <div class="relative">
-        <img src="./images/banner.png" alt="" />
+      <div class=" w-full flex justify-end text-end relative">
+        <img class="w-full md:w-3/4 text-end flex justify-end" src="./images/banner.png" alt="" />
         <!-- card -->
         <div
           class="absolute flex items-center gap-3 bg-[#FFFFFF] shadow-lg py-5 px-6 rounded-lg lg:bottom-8 lg:left-20"
@@ -83,7 +86,9 @@
           </div>
           <div>
             <h1 class="text-3xl font-bold">5.00</h1>
-            <p class="font-semibold text-[#777777] text-base">Trust Pilot Ratings</p>
+            <p class="font-semibold text-[#777777] text-base">
+              Trust Pilot Ratings
+            </p>
           </div>
         </div>
       </div>
@@ -103,7 +108,7 @@
           </p>
         </div>
         <!-- grid-cards -->
-        <div class="lg:grid grid-cols-4 gap-6 text-center mt-12">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-6 text-center mt-12">
           <!-- product-cards -->
           <div class="shadow-md bg-gray-50 overflow-hidden rounded-lg">
             <img class="mx-auto pt-4" src="./images/tea-1.png" alt="" />
@@ -145,9 +150,9 @@
       </section>
       <!-- great tea section -->
       <section class="max-w-[1150px] mx-auto my-32">
-        <div class="grid grid-cols-2">
+        <div class="grid lg:grid-cols-2 md:grid-cols-1  grid-cols-1 md:m-4 md:gap-8">
           <!-- image section -->
-          <div class="grid grid-cols-2 grid-rows-3 gap-4 lg:w-5/6">
+          <div class="grid grid-cols-2 grid-rows-3 gap-4 lg:w-5/6 ">
             <div
               class="h-38 bg-gradient-to-r from-red-100 to-red-50 rounded-xl"
             ></div>
@@ -191,7 +196,7 @@
       </section>
       <!-- meet-section -->
       <section
-        class="max-w-[1150px] mx-auto bg-gradient-to-r from-[#FF8938] to-[#FF0000] flex justify-between items-center px-16 py-20 rounded-xl"
+        class="max-w-[1150px] mx-auto bg-gradient-to-r from-[#FF8938] to-[#FF0000] flex justify-between items-center px-16 py-20 rounded-xl md:m-4"
       >
         <!-- text-content -->
         <div class="w-full">
@@ -219,7 +224,7 @@
         </div>
       </section>
       <!-- event-section -->
-      <section class="max-w-[1150px] mx-auto my-32">
+      <section class="max-w-[1150px] mx-auto my-32 md:m-4">
         <!-- event-title -->
         <div class="text-center">
           <h2 class="text-5xl font-extrabold">News & Events</h2>
@@ -231,9 +236,9 @@
           </p>
         </div>
         <!-- cards-container -->
-        <div class="flex gap-6 justify-between items-center">
+        <div class="flex gap-6 xl:justify-between lg:justify-center md:justify-center items-center md:flex-wrap ">
           <!-- event-card -->
-          <div class="border-2 border-[#D2D2D2] p-6 rounded-lg">
+          <div class=" w-[364px] h-[448px] border-2 border-[#D2D2D2] p-6 rounded-lg">
             <!-- card-image -->
             <div class="flex justify-center items-center">
               <img class="w-full" src="./images/news-1.png" alt="" />
@@ -251,7 +256,7 @@
             </div>
           </div>
           <!-- event-card -->
-          <div class="border-2 border-[#D2D2D2] p-6 rounded-lg">
+          <div class=" w-[364px] h-[448px] border-2 border-[#D2D2D2] p-6 rounded-lg">
             <!-- card-image -->
             <div class="flex justify-center items-center">
               <img class="w-full" src="./images/news-2.png" alt="" />
@@ -269,7 +274,7 @@
             </div>
           </div>
           <!-- event-card -->
-          <div class="border-2 border-[#D2D2D2] p-6 rounded-lg">
+          <div class=" w-[364px] h-[448px] border-2 border-[#D2D2D2] p-6 rounded-lg">
             <!-- card-image -->
             <div>
               <img src="./images/news-3.png" alt="" />
@@ -291,15 +296,15 @@
     </main>
     <!-- footer-area -->
     <footer class="bg-[#FFE8E6]">
-      <div class="max-w-[1150px] mx-auto">
+      <div class="max-w-[1150px] mx-auto md:m-4 sm:m-4">
         <!-- row-1 -->
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center  ">
           <!-- logo -->
           <div>
             <img class="mt-32" src="./images/cup.png" alt="" />
           </div>
           <!-- content -->
-          <div class="flex gap-10 items-center mt-32">
+          <div class="flex gap-10 items-center mt-32 ">
             <h2 class="text-xl font-medium text-[#494949]">
               Ready to get strated?
             </h2>
@@ -311,9 +316,9 @@
           </div>
         </div>
         <!-- row-2 -->
-        <div class="flex justify-between my-24">
+        <div class="flex justify-between my-24 lg:flex-row lg:gap-0 md:flex-col md:gap-8 sm:flex-col sm:gap-4">
           <!-- col-1 -->
-          <div class="flex flex-col space-y-4">
+          <div class="flex flex-col space-y-4 ">
             <h2 class="text-xl font-semibold">Quick Links</h2>
             <a class="text-[#494949] text-base" href="">Home</a>
             <a class="text-[#494949] text-base" href="">About Us</a>
@@ -335,28 +340,91 @@
             <a class="text-[#494949] text-base" href="">Contact Us</a>
           </div>
           <!-- col-4 -->
-          <div class="flex flex-col space-y-4 ">
-            <h2 class=" max-w-[216px] text-2xl font-semibold">Subscribe to our newsletter</h2>
-            <div class="flex justify-between items-end">
+          <div class="flex flex-col space-y-4">
+            <h2 class="max-w-[216px] text-2xl font-semibold">
+              Subscribe to our newsletter
+            </h2>
+            <div class="flex justify-between md:justify-start sm:justify-start items-center">
               <div class="flex flex-col">
-                <label  for="">Email address</label>
-                <label class="text-[#494949] text-base" for="">Email address</label>
-              <input class="bg-transparent border-b-2" type="text">
+                <label class="text-[#494949] text-base" for=""
+                  >Email address</label
+                >
+                <input
+                  class="bg-transparent border-b-2 border-[#494949]"
+                  type="text"
+                />
+              </div>
+              <a href=""
+                ><span
+                  class="w-8 h-8 leading-8 bg-gradient-to-r from-[#FF8938] to-[#FF0000] rounded-full flex justify-center items-center"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                    />
+                  </svg> </span
+              ></a>
             </div>
-            <a href="">h</a>
-            </div>
-            <div>
-              <a href="">h</a>
-              <a href="">h</a>
-              <a href="">h</a>
+            <div class="flex items-center gap-6">
+              <a href=""
+                ><svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 13.6411H16.5L17.5 9.64111H14V7.64111C14 6.61111 14 5.64111 16 5.64111H17.5V2.28111C17.174 2.23811 15.943 2.14111 14.643 2.14111C11.928 2.14111 10 3.79811 10 6.84111V9.64111H7V13.6411H10V22.1411H14V13.6411Z"
+                    fill="#494949"
+                  />
+                </svg>
+              </a>
+              <a href=""
+                ><svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.1623 5.79802C21.3989 6.13571 20.5893 6.35749 19.7603 6.45602C20.634 5.93345 21.288 5.11103 21.6003 4.14202C20.7803 4.63002 19.8813 4.97202 18.9443 5.15702C18.3149 4.4836 17.4807 4.03698 16.5713 3.8866C15.6618 3.73622 14.7282 3.89051 13.9156 4.32547C13.1029 4.76043 12.4567 5.4517 12.0774 6.29181C11.6981 7.13192 11.607 8.0738 11.8183 8.97102C10.1554 8.88767 8.52863 8.45554 7.04358 7.70268C5.55854 6.94982 4.24842 5.89306 3.1983 4.60102C2.82659 5.23947 2.63125 5.96524 2.6323 6.70402C2.6323 8.15402 3.3703 9.43502 4.4923 10.185C3.82831 10.1641 3.17893 9.9848 2.5983 9.66202V9.71402C2.5985 10.6797 2.93267 11.6156 3.54414 12.3631C4.15562 13.1105 5.00678 13.6235 5.9533 13.815C5.33691 13.9821 4.6906 14.0067 4.0633 13.887C4.33016 14.7183 4.8503 15.4452 5.55089 15.9661C6.25147 16.487 7.09742 16.7758 7.9703 16.792C7.10278 17.4733 6.10947 17.977 5.04718 18.2742C3.98488 18.5714 2.87442 18.6563 1.7793 18.524C3.69099 19.7534 5.91639 20.4061 8.1893 20.404C15.8823 20.404 20.0893 14.031 20.0893 8.50402C20.0893 8.32402 20.0843 8.14202 20.0763 7.96402C20.8952 7.37218 21.6019 6.63904 22.1633 5.79902L22.1623 5.79802Z"
+                    fill="#494949"
+                  />
+                </svg>
+              </a>
+              <a href=""
+                ><svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2.14111C14.717 2.14111 15.056 2.15111 16.122 2.20111C17.187 2.25111 17.912 2.41811 18.55 2.66611C19.21 2.92011 19.766 3.26411 20.322 3.81911C20.8305 4.31901 21.224 4.9237 21.475 5.59111C21.722 6.22811 21.89 6.95411 21.94 8.01911C21.987 9.08511 22 9.42411 22 12.1411C22 14.8581 21.99 15.1971 21.94 16.2631C21.89 17.3281 21.722 18.0531 21.475 18.6911C21.2247 19.3589 20.8311 19.9637 20.322 20.4631C19.822 20.9714 19.2173 21.3649 18.55 21.6161C17.913 21.8631 17.187 22.0311 16.122 22.0811C15.056 22.1281 14.717 22.1411 12 22.1411C9.283 22.1411 8.944 22.1311 7.878 22.0811C6.813 22.0311 6.088 21.8631 5.45 21.6161C4.78233 21.3656 4.17753 20.9721 3.678 20.4631C3.16941 19.9633 2.77593 19.3586 2.525 18.6911C2.277 18.0541 2.11 17.3281 2.06 16.2631C2.013 15.1971 2 14.8581 2 12.1411C2 9.42411 2.01 9.08511 2.06 8.01911C2.11 6.95311 2.277 6.22911 2.525 5.59111C2.77524 4.92329 3.1688 4.31843 3.678 3.81911C4.17767 3.31034 4.78243 2.91684 5.45 2.66611C6.088 2.41811 6.812 2.25111 7.878 2.20111C8.944 2.15411 9.283 2.14111 12 2.14111ZM12 7.14111C10.6739 7.14111 9.40215 7.6679 8.46447 8.60558C7.52678 9.54326 7 10.815 7 12.1411C7 13.4672 7.52678 14.739 8.46447 15.6766C9.40215 16.6143 10.6739 17.1411 12 17.1411C13.3261 17.1411 14.5979 16.6143 15.5355 15.6766C16.4732 14.739 17 13.4672 17 12.1411C17 10.815 16.4732 9.54326 15.5355 8.60558C14.5979 7.6679 13.3261 7.14111 12 7.14111ZM18.5 6.89111C18.5 6.55959 18.3683 6.24165 18.1339 6.00723C17.8995 5.77281 17.5815 5.64111 17.25 5.64111C16.9185 5.64111 16.6005 5.77281 16.3661 6.00723C16.1317 6.24165 16 6.55959 16 6.89111C16 7.22263 16.1317 7.54058 16.3661 7.775C16.6005 8.00942 16.9185 8.14111 17.25 8.14111C17.5815 8.14111 17.8995 8.00942 18.1339 7.775C18.3683 7.54058 18.5 7.22263 18.5 6.89111ZM12 9.14111C12.7956 9.14111 13.5587 9.45718 14.1213 10.0198C14.6839 10.5824 15 11.3455 15 12.1411C15 12.9368 14.6839 13.6998 14.1213 14.2624C13.5587 14.825 12.7956 15.1411 12 15.1411C11.2044 15.1411 10.4413 14.825 9.87868 14.2624C9.31607 13.6998 9 12.9368 9 12.1411C9 11.3455 9.31607 10.5824 9.87868 10.0198C10.4413 9.45718 11.2044 9.14111 12 9.14111Z"
+                    fill="#494949"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
         <!-- row-3 -->
-        <div class="pb-32">
-          <p class="text-center text-[#494949] font-medium text-base ">© 2027 UIDesign.to - All rights reserved.</p>
+        <div class="pb-32 md:pb-16 sm:pb-8">
+          <p class="text-center text-[#494949] font-medium text-base">
+            © 2027 UIDesign.to - All rights reserved.
+          </p>
         </div>
-
       </div>
     </footer>
   </body>
